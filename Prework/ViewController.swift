@@ -17,8 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // Sets the title in the Navigation Bar
+        self.title = "Tip Calculator"
     }
 
+
+    
+    
     @IBAction func calculateTip(_ sender: Any){
         //Get bill amount from text field input
         let bill = Double(billAmountTextField.text!) ?? 0
